@@ -1,0 +1,111 @@
+/* 颜色变量 */
+
+$color-gray :#f4f4f5;
+$color-back :#283443;
+
+/* 行为相关颜色 */
+$color-primary: #007aff;
+$color-success: #4cd964;
+$color-warning: #f0ad4e;
+$color-error: #dd524d;
+
+$color-primary-dark: #398ade;
+$color-primary-disabled: #9acafc;
+$color-primary-light: #ecf5ff;
+
+$color-warning-dark: #f1a532;
+$color-warning-disabled: #f9d39b;
+$color-warning-light: #fdf6ec;
+
+$color-success-dark: #53c21d;
+$color-success-disabled: #a9e08f;
+$color-success-light: #f5fff0;
+
+$color-error-dark: #e45656;
+$color-error-disabled: #f7b2b2;
+$color-error-light: #fef0f0;
+
+$color-info-dark: #767a82;
+$color-info-disabled: #c4c6c9;
+$color-info-light: #f4f4f5;
+
+/* 文字基本颜色 */
+$text-color:#333;//基本色
+$text-color-inverse:#fff;//反色
+$text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+$text-color-placeholder: #808080;
+$text-color-disable:#c0c0c0;
+
+/* 背景颜色 */
+$bg-color:#ffffff;
+$bg-color-grey:#f8f8f8;
+$bg-color-hover:#f1f1f1;//点击状态颜色
+$bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$border-color:#c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$font-size-sm:24rpx;
+$font-size-base:28rpx;
+$font-size-lg:32rpx;
+
+/* 图片尺寸 */
+$img-size-sm:40rpx;
+$img-size-base:52rpx;
+$img-size-lg:80rpx;
+
+/* Border Radius */
+$border-radius-sm: 4rpx;
+$border-radius-base: 6rpx;
+$border-radius-lg: 12rpx;
+$border-radius-circle: 50%;
+
+/* 水平间距 */
+$spacing-row-sm: 10px;
+$spacing-row-base: 20rpx;
+$spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$spacing-col-sm: 8rpx;
+$spacing-col-base: 16rpx;
+$spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$color-title: #2C405A; // 文章标题颜色
+$font-size-title:40rpx;
+$color-subtitle: #555555; // 二级标题颜色
+$font-size-subtitle:36rpx;
+$color-paragraph: #3F536E; // 文章段落颜色
+$font-size-paragraph:30rpx;
+
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:#263445;
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+
+$sideBarWidth: 210px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
